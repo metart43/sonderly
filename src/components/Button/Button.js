@@ -13,13 +13,12 @@ const SIZES = {
   },
   regular: {
     "--fontSize": 1 + "rem",
-    "--padding": "7px 24px"
+    "--padding": "12px 52px"
   }
 };
 
 
 const Button = ({ size, type, label, backgroundColor }) => {
-  console.log(backgroundColor);
   const styles = SIZES[size];
   let Component;
 
@@ -34,6 +33,8 @@ const ButtonBase = styled.button`
   font-size: ${props => props.styles["--fontSize"]};
   padding: ${props => props.styles["--padding"]};
   border-radius: 100px;
+  border: none;
+  color: ${props => props.theme.colors.white};
   background-color: ${props => props.styles.backgroundColor || props.theme.colors.primary};
 `;
 

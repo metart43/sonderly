@@ -6,8 +6,8 @@ import ActionsPane from "./ActionsPane";
 
 const Wrapper = styled.header`
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  width: 100%;
 `;
 
 const HeaderComponent = () => {

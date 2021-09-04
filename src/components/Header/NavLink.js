@@ -3,7 +3,6 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const Wrapper = styled.a`
-  margin: 0 30px;
   text-decoration: none;
   color: ${props => props.theme.colors.black[100]};
   letter-spacing: 0px;
