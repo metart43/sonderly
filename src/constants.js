@@ -1,10 +1,11 @@
 export const COLORS = {
-  white: "0deg 0% 100%",
+  white: "hsl(0deg 0% 100%)",
   black: {
-    100: "0deg 0% 26%"
+    100: "hsl(0deg 0% 26%)"
   },
+  iconColor: "#1C2126",
   primary: "#20A77A",
-  secondary: "240deg 60% 63%",
+  secondary: "hsl(240deg 60% 63%)",
 };
 
 export const WEIGHTS = {

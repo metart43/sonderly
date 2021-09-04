@@ -66,10 +66,6 @@ html {
   /*
     Silence the warning about missing Reach Dialog styles
   */
-  --reach-dialog: 1;
-  --white: hsl(${props => props.theme.colors.white});
-  --black-100: hsl(${props => props.theme.colors.black[100]});
-  --primary: ${props => props.theme.colors.primary}; 
 }
 html, body, #root {
   height: 100%;
