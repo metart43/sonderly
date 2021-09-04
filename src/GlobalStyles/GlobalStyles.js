@@ -68,14 +68,8 @@ html {
   */
   --reach-dialog: 1;
   --white: hsl(${props => props.theme.colors.white});
-  --gray-100: hsl(${props => props.theme.colors.gray[100]});
-  --gray-300: hsl(${props => props.theme.colors.gray[300]});
-  --gray-500: hsl(${props => props.theme.colors.gray[500]});
-  --gray-700: hsl(${props => props.theme.colors.gray[700]});
-  --gray-900: hsl(${props => props.theme.colors.gray[900]});
-  --primary-color: hsl(${props => props.theme.colors.primary});
-  --secondary-color: hsl(${props => props.theme.colors.secondary});
-  --backdrop-gray: hsl(${props => props.theme.colors.gray[700]} / 0.8);
+  --black-100: hsl(${props => props.theme.colors.black[100]});
+  --primary: ${props => props.theme.colors.primary}; 
 }
 html, body, #root {
   height: 100%;
