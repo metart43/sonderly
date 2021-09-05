@@ -6,7 +6,7 @@ import France from "../../images/flags/Ellipse_198@2x.png";
 
 const Wrapper = styled.div`
   margin-left: auto;
-  margin-right: 12px;
+  margin-right: 48px;
   display: flex;
   align-items: center;
   gap: clamp(0.5rem, 9.2vw - 4.5rem, 2.5rem);
