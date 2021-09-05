@@ -7,7 +7,8 @@ const Wrapper = styled.nav`
   gap: clamp(1rem, 9.2vw - 4.5rem, 3.5rem);
   align-self: center;
   margin: 0 auto;
-  flex: 5;  
+  flex: 5;
+  justify-content: center;  
 `;
 
 

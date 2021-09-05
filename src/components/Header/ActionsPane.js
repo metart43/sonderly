@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   align-items: center;
   gap: clamp(0.5rem, 9.2vw - 4.5rem, 2.5rem);
   flex: 2.5;
+  justify-content: flex-end;
 `;
 
 const Country = styled.img`

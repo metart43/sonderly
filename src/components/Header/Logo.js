@@ -8,7 +8,7 @@ const Image = styled.img`
 
 const ImageWrapper = styled.div`
   flex: 3;
-  margin: 24px;
+  margin: 24px 0;
   display: flex;
   justify-content: center;
 `;
