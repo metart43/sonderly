@@ -14,9 +14,12 @@ const BaseCard = styled.article`
 `;
 
 const VerticalCard = styled(BaseCard)`
-  padding: 20px 14px 20px 32px;
+  /* padding-left:32px;
+  padding-right: 14px; */
+  flex-basis: ${props => props.style.size + "px"};
+  padding: 20px 20px 20px 24px;
   flex-direction: ${props => props.style.alignment};
-  justify-content: center;
+  justify-content: space-between;
 `;
 
 const HorizontalCard = styled(BaseCard)`
