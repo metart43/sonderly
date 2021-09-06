@@ -36,11 +36,14 @@ const MainSection = styled.div``;
 
 const CardWrapper = ({ alignment, size }) => {
   let Card;
+  let cardType;
 
   if (alignment === "column") {
     Card = VerticalCard;
+    cardType = "vertical";
   } else if (alignment.includes("row")) {
     Card = HorizontalCard;
+    cardType = "horizontal";
   } else {
     Card = BaseCard;
   }
@@ -48,8 +51,8 @@ const CardWrapper = ({ alignment, size }) => {
   return (
     <Card style={{ alignment, size }}>
       <HeaderSection style={{ alignment }}>
-        <CardAvatar />
-        <CardHeader alignment={alignment} />
+        <CardAvatar cardType={cardType} />
+        <CardHeader cardType={cardType} />
       </HeaderSection>
       <MainSection >
         <CardContext />

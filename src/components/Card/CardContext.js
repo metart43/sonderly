@@ -9,7 +9,7 @@ const Wrapper = styled.div`
 
 const Title = styled.p`
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: ${props => props.theme.colors.primary};
 `;
 const Description = styled.p`
