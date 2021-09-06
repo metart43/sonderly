@@ -9,7 +9,7 @@ const SIZES = {
   },
   long: {
     "--fontSize": 1 + "rem",
-    "--padding": "12px 20px"
+    "--padding": "14px 64px"
   },
   regular: {
     "--fontSize": 1 + "rem",
@@ -18,15 +18,9 @@ const SIZES = {
 };
 
 
-const Button = ({ size, type, label, backgroundColor }) => {
+const Button = ({ size, label, backgroundColor }) => {
   const styles = SIZES[size];
-  let Component;
-
-  if (type === "logIn") {
-    Component = ButtonBase;
-  }
-
-  return <Component styles={{ ...styles, backgroundColor }}>{label}</Component>;
+  return <ButtonBase styles={{ ...styles, backgroundColor }}>{label}</ButtonBase>;
 };
 
 const ButtonBase = styled.button`
@@ -40,7 +34,6 @@ const ButtonBase = styled.button`
 
 Button.propTypes = {
   size: PropTypes.oneOf(["small", "long", "regular"]),
-  type: PropTypes.oneOf(["logIn", "card", "singUp"]),
   label: PropTypes.string,
   backgroundColor: PropTypes.string
 };
