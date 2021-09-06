@@ -16,7 +16,7 @@ const BaseCard = styled.article`
 const VerticalCard = styled(BaseCard)`
   padding: 20px 14px 20px 32px;
   flex-direction: ${props => props.style.alignment};
-  flex-basis: ${props => props.style.size + "px"};
+  justify-content: center;
 `;
 
 const HorizontalCard = styled(BaseCard)`
