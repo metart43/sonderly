@@ -4,6 +4,7 @@ import GlobalStyles from "../GlobalStyles";
 import { THEME } from "../constants";
 import HeaderComponent from "../components/Header/HeaderComponent";
 import Hero from "../components/Hero";
+import CardContainer from "../components/CardSection/CardContainer";
 
 const IndexPage = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage = () => {
         <GlobalStyles />
         <HeaderComponent />
         <Hero />
+        <CardContainer />
       </ThemeProvider>
     </React.StrictMode>
   );
