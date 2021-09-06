@@ -8,6 +8,7 @@ const Wrapper = styled.section`
   margin: 0 auto;
   width: 90%;
   gap: 20px;
+  margin: 75px auto 112px auto;
 `;
 
 const CardRow = styled.div`
@@ -46,7 +47,7 @@ const CardContainer = () => {
         <CardRow key={rowIndex}>
           {row.map((card, cardIndex) => {
             const alignment = cardIndex === 0 ? "column" : "row-reverse";
-            const size = cardIndex === 0 ? 634 : 654;
+            const size = cardIndex === 0 ? 434 : 654;
             if (cardIndex === 0) {
               return (
                 <Card
